@@ -8,7 +8,7 @@ import { withRouter } from "react-router";
 import { setCartItem } from "../../redux/cart/cart-action";
 //import withRouter because we need access to this.history.push which is not available to this component
 
-const CartDropdown = ({ cartItems, history,setCartItem }) => (
+const CartDropdown = ({ cartItems, history, setCartItem }) => (
   <div>
     <div className="cart-dropdown">
       <div className="cart-items">
@@ -20,7 +20,13 @@ const CartDropdown = ({ cartItems, history,setCartItem }) => (
           <span className="empty-message">Your cart is empty</span>
         )}
       </div>
-      <CustomButton onClick={() =>{setCartItem();(history.push("/checkout"));}} isInverted>
+      <CustomButton
+        onClick={() => {
+          setCartItem();
+          history.push("/checkout");
+        }}
+        isInverted
+      >
         GO TO CHECKOUT
       </CustomButton>
     </div>

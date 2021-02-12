@@ -2,8 +2,9 @@
   height: 70px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   margin-bottom: 25px;
+  background-color: white;
+  justify-content: space-between;
 
   .logo-container {
     height: 100%;
@@ -12,12 +13,10 @@
   }
 
   .options {
-    width: 50%;
     height: 100%;
+
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-
 
     .option {
       padding: 10px 15px;
@@ -27,5 +26,15 @@
       color: black;
       font-weight: 500;
     }
+  }
+  .user-and-cart-icon {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+   
+    
   }
 }

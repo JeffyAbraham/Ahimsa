@@ -1,7 +1,8 @@
 import React from "react";
-import "./directory.style.scss";
+import "./directory.style.css";
 import MenuItem from "../menu-item/menu-item.component";
 import { connect } from "react-redux";
+
 
 const Directory = ({productSection}) => (
 

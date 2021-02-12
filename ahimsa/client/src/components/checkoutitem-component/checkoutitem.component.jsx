@@ -38,7 +38,6 @@ const CheckoutItem = ({
     >
       &#10005;
     </span>
-   
   </div>
 );
 const mapDispatchToProps = (dispatch) => ({

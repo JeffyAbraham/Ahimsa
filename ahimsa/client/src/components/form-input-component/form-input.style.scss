@@ -6,23 +6,75 @@ $main-color: black;
   font-size: 12px;
   color: $main-color;
 }
+@mixin formStyle {
+  background: none;
+  background-color: white;
+  color: $sub-color;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  
+  border-radius: 0;
+
+  margin: 25px 0;
+}
+
+.search-group {
+  position: relative;
+  margin: 0;
+
+  .form-input {
+    @include formStyle();
+    width: 75%;
+    background-image: 
+    url("data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjIuODY1IDIyLjg2NSIgd2lkdGg9JzIwcHgnIGhlaWdodD0nMjBweCcgc3Ryb2tlPScjMTY3YTkyJyBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGFyaWEtbGFiZWw9IlNlYXJjaCIgcm9sZT0iaW1nIiBmb2N1c2FibGU9ImZhbHNlIj48Y2lyY2xlICAgdHJhbnNmb3JtPSJyb3RhdGUoLTQ1IDguODk3IDguODg5KSIgY3g9IjguODk3IiBjeT0iOC44ODkiIHI9IjguMTExIj48L2NpcmNsZT48cGF0aCBkPSJNMTQuNjMyIDE0LjYyNGw3LjQ1NyA3LjQ1NyI+PC9wYXRoPjwvc3ZnPg==");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 5%;
+    padding-left: 40px;
+    margin-top: 10px;
+    height: 40px;
+    border-style: 1px solid #e5e2de;
+    background-color: #fdfdf9;
+    border-radius: 4px;
+    border-top-color: rgb(229, 226, 222);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(229, 226, 222);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(229, 226, 222);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(229, 226, 222);
+    border-left-style: solid;
+    border-left-width: 1px;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #167a92;
+    letter-spacing: 0.2rem;
+    margin: 0px;
+    
+    &:focus {
+      outline: none;
+      
+    }
+
+   
+   
+  
+
+}
 
 .group {
   position: relative;
   margin: 45px 0;
 
   .form-input {
-    background: none;
-    background-color: white;
-    color: $sub-color;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid $sub-color;
-    margin: 25px 0;
+   @include formStyle();
+   border: none;
+   border-bottom: 1px solid $sub-color;
 
     &:focus {
       outline: none;
@@ -33,7 +85,7 @@ $main-color: black;
     }
   }
 
-  input[type='password'] {
+  input[type="password"] {
     letter-spacing: 0.3em;
   }
 
@@ -51,4 +103,6 @@ $main-color: black;
       @include shrinkLabel();
     }
   }
+
+}
 }

@@ -11,6 +11,7 @@ export const selectCollectionsForPreview = createSelector(
     collections ? Object.keys(collections).map((key) => collections[key]) : []
 );
 export const selectCollectionCategory = (collectionId, state) => {
+  console.log(state)
   if (state.shop.collections) {
     return state.shop.collections[collectionId];
   } else {

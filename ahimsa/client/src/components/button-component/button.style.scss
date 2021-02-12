@@ -9,22 +9,22 @@
   background-color: black;
   color: white;
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: bolder;
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  &.isInverted{
+  &.isInverted {
     background-color: white;
-    color:black;
+    color: black;
     border: black solid 1px;
   }
 
   &:hover {
     background-color: black;
     color: white;
-    border:none;
+    border: none;
   }
 
   &.google-sign-in {
@@ -35,9 +35,5 @@
       background-color: #357ae8;
       border: none;
     }
-
-
-  
-    
   }
 }
